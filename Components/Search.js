@@ -1,15 +1,18 @@
 // Components/Search.js
 import React from 'react';
-import {StyleSheet, View, TextInput, Button, FlatList} from 'react-native';
+import {StyleSheet, View, TextInput, Button, Text, FlatList} from 'react-native';
 
 class Search extends React.Component {
     render() {
         return (
             // Ici on rend à l'écran les éléments graphiques de notre component custom Search
             <View style={styles.mainContainer}>
-                <TextInput style={styles.textInput} placeholder="Titre du film"></TextInput>
-                <Button title="Rechercher" onPress={() => {}}></Button>
-                <FlatList data={[{key: 'a'}, {key: 'b'}]} renderItem={({item}) => <Text>{item.key}</Text>}></FlatList>
+                <TextInput style={styles.textInput} placeholder="Titre du film"/>
+                <Button title="Rechercher" onPress={() => {}}/>
+                <FlatList
+                    data={[{key: 'a'}, {key: 'b'}]}
+                    renderItem={({item}) => <Text>{item.key}</Text>}
+                />
             </View>
         )
     }
