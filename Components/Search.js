@@ -6,7 +6,7 @@ class Search extends React.Component {
     render() {
         return (
             // Ici on rend à l'écran les éléments graphiques de notre component custom Search
-            <View style={{marginTop: 40}}>
+            <View style={styles.mainContainer}>
                 <TextInput style={styles.textInput} placeholder="Titre du film"></TextInput>
                 <Button title="Rechercher" onPress={() => {}}></Button>
             </View>
@@ -16,6 +16,11 @@ class Search extends React.Component {
 
 // Externalisation de style
 const styles = StyleSheet.create({
+    mainContainer: {
+        flex: 1,
+        marginTop: 40
+    },
+
     textInput: {
         marginLeft: 5,
         marginRight: 5,
